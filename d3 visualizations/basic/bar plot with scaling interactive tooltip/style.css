@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* gets applied to all the page*/
+  background: #fff;
+  color: #555;
+  font-family: "Lato", "Arial"; /*arial is the secondary option in case lato isn't available*/
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+/* div (box) properties */
+.row {
+  max-width: 1140px;
+  margin: 0 auto; /* top=bottom=0, left=right=auto meaning our page is centered in the middle */
+}
+/* all the divs with these class will be centered in the middle with the space width */
+
+/* --------------------------------------------- */
+
+#chart {
+  /* chart properties, this where we place our d3 charts */
+  width: 800px;
+  height: 400px;
+  background-color: #f7f7f7;
+  margin: 25px auto;
+  position: relative;
+}
+
+.bar {
+  /* how one bar will look */
+  display: inline-block;
+  width: 100px;
+  height: 300px;
+  background-color: green; /*bar color */
+  margin-right: 5px; /*space between the bars */
+}
+
+button {
+  display: block;
+  margin: 5px auto;
+  padding: 10px;
+  width: 200px;
+  font-size: 20px;
+  background-color: #00709b;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+#tooltip {
+  position: absolute;
+  width: 75px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #000;
+  pointer-events: none;
+  display: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}

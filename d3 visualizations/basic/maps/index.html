@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- we can use icons this way-->
+    <script
+      src="https://kit.fontawesome.com/91938e5c64.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!--downloads fonts from google ^^-->
+    <title>d3 course</title>
+  </head>
+
+  <body>
+    <section>
+      <!-- we place each different section of the page inside section -->
+      <div id="chart">
+        <!-- we place d3 charts inside divs-->
+      </div>
+
+      <div id="buttons">
+        <!-- fa are classes from the fontawesome script-->
+        <button type="button" class="pan up">
+          <i class="fa fa-arrow-up"></i>
+        </button>
+        <button type="button" class="pan down">
+          <i class="fa fa-arrow-down"></i>
+        </button>
+        <button type="button" class="pan left">
+          <i class="fa fa-arrow-left"></i>
+        </button>
+        <button type="button" class="pan right">
+          <i class="fa fa-arrow-right"></i>
+        </button>
+        <button type="button" class="zoom inside">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button type="button" class="zoom outside">
+          <i class="fa fa-minus"></i>
+        </button>
+      </div>
+
+      <script src="https://d3js.org/d3.v6.min.js"></script>
+      <script src="app.js"></script>
+    </section>
+  </body>
+</html>
